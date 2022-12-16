@@ -1,0 +1,13 @@
+clear all
+close all
+clc
+
+[y,fs] = audioread('musique.wav');
+fs
+Y = fft(y);
+figure("")
+
+
+
+player = audioplayer(y,fs);
+play(player);

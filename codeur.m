@@ -22,5 +22,5 @@ echelle = max(max(abs(tfymasq)))*1.01;
 tfymasq = tfymasq/echelle;
 
 % On sauvegarde avec la meme quantification
-wavwrite(tfymasq,fe,bits,fichier)
+audiowrite(fichier,tfymasq,fe)
 
